@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #0d0d0d;
+    font-family: "McLaren", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.heading {
+    color: #cccccc;
+    font-size: 2rem;
+    text-align: center;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    margin: 0;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start
+}
+
+.form-element {
+    padding: 0.5rem;
+    background-color: #262626;
+    color: #cccccc;
+    width: 50rem;
+    height: 3rem;
+    font-size: 1.25rem;
+    border-radius: 0.2rem;
+    border: 0;
+    outline: 0;
+}
+
+#description {
+    height: 10rem;
+    resize: none;
+}
+
+#submit {
+    width: 10rem;
+    text-align: center;
+    padding: 0;
+    background-color: #2e5eaa;
+}
+
+.form-element:hover {
+    border: 0.1rem solid #cccccc;
+}
+
+.form-element:active {
+    border: 0.05rem solid #cccccc;
+}
+
+::placeholder {
+    color: #cccccc;
+}
+
+.tasks {
+    margin: 1rem;
+    margin-top: 4rem;
+    color: #cccccc;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.task-container {
+    min-height: 7rem;
+    background-color: #262626;
+    text-align: center;
+    border-radius: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #cccccc;
+}
+
+.task-container:hover {
+    border: 0.025rem solid #cccccc;
+}
+
+.task-container a {
+    padding: 0;
+    text-decoration: none;
+    color: #2e5eaa;
+    background-color: #262626;
+}
+
+.task-container a:hover {
+    color: #cccccc;
+}
+
+.task-container h1 {
+    background-color: #262626;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+.task-container p {
+    background-color: #262626;
+}

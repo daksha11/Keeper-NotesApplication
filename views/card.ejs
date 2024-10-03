@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= fileName.slice(0, -4) %></title>
+    <link rel="stylesheet" href="/stylesheets/card.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="text">
+                <h1 class="heading">
+                    <%= fileName.slice(0, -4) %>
+                </h1>
+
+                <p class="description">
+                    <%= data %>
+                </p>
+            </div>
+
+            <div class="links">
+                <a href='/'>Back</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

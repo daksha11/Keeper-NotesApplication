@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keeper</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+</head>
+<body>
+    <h1 class="heading">Keeper - Notes Application</h1>
+
+    <div class="main">
+        <div class="form-container">
+            <form action="/add-task" method="post" class="form">
+                <input class="form-element" name="heading" autocomplete="off" type="text" placeholder="Title of the note" maxlength="18" required>
+                <textarea class="form-element" name="description" id="description" placeholder="Note description" maxlength="450" required></textarea>
+                <input class="form-element" id="submit" type="submit" value="Create note">
+            </form>
+        </div>
+        <div class="tasks">
+            <% if (files.length > 0) { %>
+                <% files.forEach(element => { %>
+                    <div class="task-container">
+                        <h1><%= element.slice(0, -4) %></h1>
+                        <a href=<%=`./files/${element}`%>>Read More</a>
+                        <a href=<%=`/${element}`%>>Delete</a>
+                    </div>
+                <% }); %>
+            <% } else { %>
+                <h1>No Notes</h1>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>
